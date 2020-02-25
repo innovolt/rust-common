@@ -5,4 +5,4 @@ If anybody is interested to add utility function that you think is of your use a
 
 
 
-Note: I am open to feedback regarding anything, whether it's about structuring the repository or anything else. So, kindly provide your feedback.
+Note: I am open for feedback regarding anything, whether it's about structuring the repository or anything else. So, kindly provide your feedback.
