@@ -190,35 +190,41 @@
         },
         "FortanixComputeNodeRequestBody": {
             "properties": {
-                "fortanixComputeNodeAgentRegion": {
-                    "type": "string",
-                    "description": "Location of CCM Node"
-                },
-                "vmName": {
-                    "type": "string",
-                    "description": "Name of CCM Node"
-                },
-                "adminUsername": {
-                    "type": "string",
-                    "description": "Name of admin corresponding to CCM Node"
-                },
-                "authenticationType": {
-                    "type": "string",
-                    "description": "Type of authentication to be used for CCM Node"
-                },
-                "osDiskSize": {
-                    "type": "integer",
-                    "minimum": 200,
-                    "default": 200,
-                    "description": "Size of OS Disk corresponding to CCM Node"
-                },
-                "vmSize": {
-                    "type": "string",
-                    "description": "Size of CCM Node"
-                },
-                "deploymentHash": {
-                    "type": "string",
-                    "description": "Hash of the deployment"
+                "properties": {
+                    "type": "object",
+                    "description":"The definition of a created fortanix compute node",
+                    "properties": {
+                        "fortanixComputeNodeAgentRegion": {
+                            "type": "string",
+                            "description": "Location of CCM Node"
+                        },
+                        "vmName": {
+                            "type": "string",
+                            "description": "Name of CCM Node"
+                        },
+                        "adminUsername": {
+                            "type": "string",
+                            "description": "Name of admin corresponding to CCM Node"
+                        },
+                        "authenticationType": {
+                            "type": "string",
+                            "description": "Type of authentication to be used for CCM Node"
+                        },
+                        "osDiskSize": {
+                            "type": "integer",
+                            "minimum": 200,
+                            "default": 200,
+                            "description": "Size of OS Disk corresponding to CCM Node"
+                        },
+                        "vmSize": {
+                            "type": "string",
+                            "description": "Size of CCM Node"
+                        },
+                        "deploymentHash": {
+                            "type": "string",
+                            "description": "Hash of the deployment"
+                        }
+                    }
                 }
             },
             "allOf": [
@@ -229,37 +235,43 @@
         },
         "FortanixComputeNodeResponse": {
             "properties": {
-                "provisioningState": {
-                    "type": "string",
-                    "description": "Provisioning State of the deployment"
-                },
-                "fortanixComputeNodeAgentRegion": {
-                    "type": "string",
-                    "description": "Location of CCM Node"
-                },
-                "vmName": {
-                    "type": "string",
-                    "description": "Name of CCM Node"
-                },
-                "adminUsername": {
-                    "type": "string",
-                    "description": "Name of admin corresponding to CCM Node"
-                },
-                "authenticationType": {
-                    "type": "string",
-                    "description": "Type of authentication to be used for CCM Node"
-                },
-                "osDiskSize": {
-                    "type": "integer",
-                    "description": "Size of OS Disk corresponding to CCM Node"
-                },
-                "vmSize": {
-                    "type": "string",
-                    "description": "Size of CCM Node"
-                },
-                "deploymentHash": {
-                    "type": "string",
-                    "description": "Hash of the deployment"
+                "properties": {
+                    "type": "object",
+                    "description":"The definition of a created fortanix compute node",
+                    "properties": {
+                        "provisioningState": {
+                            "type": "string",
+                            "description": "Provisioning State of the deployment"
+                        },
+                        "fortanixComputeNodeAgentRegion": {
+                            "type": "string",
+                            "description": "Location of CCM Node"
+                        },
+                        "vmName": {
+                            "type": "string",
+                            "description": "Name of CCM Node"
+                        },
+                        "adminUsername": {
+                            "type": "string",
+                            "description": "Name of admin corresponding to CCM Node"
+                        },
+                        "authenticationType": {
+                            "type": "string",
+                            "description": "Type of authentication to be used for CCM Node"
+                        },
+                        "osDiskSize": {
+                            "type": "integer",
+                            "description": "Size of OS Disk corresponding to CCM Node"
+                        },
+                        "vmSize": {
+                            "type": "string",
+                            "description": "Size of CCM Node"
+                        },
+                        "deploymentHash": {
+                            "type": "string",
+                            "description": "Hash of the deployment"
+                        }
+                    }
                 }
             },
             "allOf": [
